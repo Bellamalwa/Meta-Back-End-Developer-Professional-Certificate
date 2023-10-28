@@ -1,3 +1,5 @@
+#Ecercise one of the week 1
+
 # Using explicit type conversion, change the following 
 # inputs so the types match with the following below
 #  
