@@ -20,3 +20,5 @@ cake = float(input('1 cake @: $ '))
 bill_total = coffee + sandwich + cake
 
 print('Your total bill is $ {:.2f}'.format(bill_total))
+
+#the code is expected to run 
