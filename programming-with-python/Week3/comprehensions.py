@@ -1,4 +1,4 @@
-#Here IS THE TASK
+#Here IS THE COMPREHESNSION.PY TASK
 
 # Input data: List of dictionaries
 employee_list = [
@@ -130,10 +130,8 @@ def to_mod_list(employee_list):
       list - A list of strings consisting of name + department.
    """
    ### WRITE SOLUTION CODE HERE
-   modified_list = list(map(mod, employee_list))
-   return modified_list
-   
-  
+   ans=list(map(mod,employee_list))
+   return ans;
    raise NotImplementedError()
 
 def generate_usernames(mod_list):
@@ -157,9 +155,9 @@ def generate_usernames(mod_list):
       list - A list of usernames consisting of name + department delimited by underscores.
    """
    ### WRITE SOLUTION CODE HERE
-   usernames = [s.replace("","_") for s in mod_list]
-   return usernames
-
+   list=[]
+   list=[i.replace(" ","_") for i in mod_list]
+   return list;
    raise NotImplementedError()
 
 def map_id_to_initial(employee_list):
@@ -178,10 +176,9 @@ def map_id_to_initial(employee_list):
       dict - A dictionary mapping an employee's id (value) to their first initial (key).
    """
    ### WRITE SOLUTION CODE HERE
-
-   map_id_to_initial = {employee['id']:employee['name'][0]] for employee in employee_list}
-   return map_id_to_initial
-   
+   dict={}
+   dict={i["name"][0]:i["id"] for i in employee_list}
+   return dict
    raise NotImplementedError()
 
 def main():
@@ -194,5 +191,3 @@ def main():
 
 if __name__ == "__main__":
    main()
-
-
